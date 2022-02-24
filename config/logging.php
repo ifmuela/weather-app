@@ -4,6 +4,8 @@ use Monolog\Handler\NullHandler;
 use Monolog\Handler\StreamHandler;
 use Monolog\Handler\SyslogUdpHandler;
 
+use App\Logging\SimpleFormatter;
+
 return [
 
     /*
@@ -112,6 +114,13 @@ return [
 
         'emergency' => [
             'path' => storage_path('logs/laravel.log'),
+        ],
+
+        'weather' => [
+            'driver' => 'single',
+            'tag' => [SimpleFormatter::class],
+            'path' => storage_path('logs/weather.log'),
+            'level' => env('LOG_LEVEL', 'debug'),
         ],
     ],
 
