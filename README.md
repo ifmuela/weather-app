@@ -2,6 +2,17 @@
 
 Application that implements console commands that access the `openweathermap` api to obtain weather data
 
+## Start
+
+```bash
+composer install
+
+Create .env from .env.example and fill the variables
+
+OPENWEATHERMAP_URL=
+OPENWEATHERMAP_KEY=
+```
+
 ## Commands
 
 ```bash
