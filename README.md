@@ -49,7 +49,7 @@ Get the weather forecast for max 5 days for the given location.
 
 Arguments:
 
-* Location, in `{city},{country code}` format.
+* Location, in `{city},{country code}` format. If you don't pass the argument, it defaults to Santander,ES
 
 Options:
 
